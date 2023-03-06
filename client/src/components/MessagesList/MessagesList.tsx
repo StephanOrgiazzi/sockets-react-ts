@@ -1,11 +1,11 @@
 import { Message } from '../../hooks/useChat'
 import styles from './MessagesList.module.scss'
 
-type MessageType = {
+type MessagesType = {
     messages: Message[]
 }
 
-export default function MessagesList({ messages }: MessageType) {
+export default function MessagesList({ messages }: MessagesType) {
     return (
         <div className={styles.messages}>
             {messages.map((msg, index) => (
